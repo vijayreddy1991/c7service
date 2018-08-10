@@ -1,7 +1,7 @@
 language: none
    
 services:
-  - cassandra 
+ # - cassandra 
   - couchdb 
   - elasticsearch 
   - memcached 
@@ -35,6 +35,6 @@ build:
     - yum list rabbitmq-server | grep rabbitmq-serve
     - redis-server --version
     - mongod --version
-    - cassandra -v  
+   #- cassandra -v  
     - /var/lib/neo4j/bin/neo4j version
     - pip show pycrypto
