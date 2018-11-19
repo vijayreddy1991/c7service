@@ -1,25 +1,13 @@
-language: none
+language: java
+
+jdk: openjdk7
    
 services:
  # - cassandra 
-  - couchdb 
-  - elasticsearch 
-  - memcached 
-  - mongodb 
-  - mysql 
- # - neo4j 
-  - postgres 
-  - rabbitmq 
-  - redis  
-  - riak 
-  - selenium 
-  - sqlite 
-  
-build:
-  pre_ci_boot:
-    image_name: drydock/c7all
-    image_tag: master
-    pull: true
+ 
+  - neo4j 
+ 
+ 
     
   ci:
     - psql --version
