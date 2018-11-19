@@ -8,7 +8,7 @@ services:
   - neo4j 
  
  
- Build:   
+build:   
   ci:
     - psql --version
     - java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
