@@ -10,7 +10,7 @@ services:
  
 build:	
   pre_ci_boot:	
-    image_name: drydock/c7all	
+    image_name: drydock/c7javall	
     image_tag: v6.7.4	
     pull: true 
   ci:
