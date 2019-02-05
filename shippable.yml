@@ -5,17 +5,17 @@ jdk: openjdk7
 services:
  # - cassandra 
  
-  - neo4j 
+  - postgres
  
  
 build:	
   pre_ci_boot:	
     image_name: drydock/c7javall	
-    image_tag: v6.7.4	
+    image_tag: master	
     pull: true 
   ci:
     - psql --version
-    - java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
+   # - java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
     - sqlite3 --version
     - mysql --version
     - elasticsearch --version
